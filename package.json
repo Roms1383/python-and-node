@@ -1,0 +1,11 @@
+{
+  "name": "python-and-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Romain KELIFA <romain.kelifa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
