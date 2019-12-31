@@ -3,8 +3,10 @@ import chalk
 import json
 from Naked.toolshed.shell import muterun_js
 
+print(chalk.yellow('requesting and buffering...'))
 response = muterun_js('./callable.js', 'search margarita')
 if response.exitcode == 0:
+  print(chalk.yellow('buffer complete !'))
   try:
     output = response.stdout.decode("utf-8")
     print(chalk.blue('raw output from JS'), output)
